@@ -1,0 +1,19 @@
+
+= Eventuate Tram Sagas Customers and Orders - Update by Luis Carlos Jimenez Lopez
+
+* Creación de 4 proyectos nuevos en gradle para contener la api de productos, el backend, el servicio y el web-api.
+* Modificación del orderService y sus entidades para soportar un modelo actualizado que tenga campos relacionados con el producto.
+* Modificación de la saga para agregar una operación y comprobar el stock del producto.
+* Creación de otro proyecto gateway-api haciendo uso de maven y spring cloud gateway para redirigir la llamadas de los microservicios.
+* Ajustes varios y los build.gradle y docker-compose de MYSQL.erSaga` in MySQL/Postgres database.
+* Adjunto collection de postman
+
+```
+./gradlew assemble
+```
+
+```
+export DOCKER_HOST_IP=...
+./gradlew mysqlComposeBuild
+./gradlew mysqlComposeUp
+```

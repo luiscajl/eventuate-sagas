@@ -1,0 +1,18 @@
+dependencies {
+    compile project(":common-swagger")
+    compile project(":product-backend")
+    compile project(":product-web-api")
+
+    compile "org.springframework.boot:spring-boot-starter-web:$springBootVersion"
+    compile "org.springframework.boot:spring-boot-starter-actuator:$springBootVersion"
+    compile "org.springframework.hateoas:spring-hateoas:0.25.0.RELEASE"
+    compileOnly group: 'org.projectlombok', name: 'lombok', version: '1.18.12'
+
+}
+
+apply plugin: "org.springframework.boot"
+
+
+repositories {
+    mavenCentral()
+}

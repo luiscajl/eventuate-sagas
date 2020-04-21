@@ -1,0 +1,10 @@
+dependencies {
+    compile project(":common")
+    compile "io.eventuate.tram.core:eventuate-tram-spring-commands:$eventuateTramVersion"
+    compileOnly group: 'org.projectlombok', name: 'lombok', version: '1.18.12'
+
+}
+
+repositories {
+    mavenCentral()
+}
